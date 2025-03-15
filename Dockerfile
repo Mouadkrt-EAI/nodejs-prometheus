@@ -5,7 +5,7 @@ FROM node:16
 WORKDIR /app
 
 # Copy package*.json files to the working directory
-COPY package*.json ./
+COPY package.json ./
 
 # Install dependencies
 RUN npm install
@@ -17,4 +17,4 @@ COPY . .
 EXPOSE 3001
 
 # Run command to start the server when the container launches
-CMD ["node", "index.js"]
+CMD ["node", "/app/index.js"]
