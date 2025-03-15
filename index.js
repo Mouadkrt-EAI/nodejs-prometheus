@@ -33,7 +33,7 @@ app.get('/example', async (req, res) => {
 });
 
 // Start the server
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3001;
 app.listen(port, '0.0.0.0', () => {
   console.log(`Server listening on port ${port}`);
 });
